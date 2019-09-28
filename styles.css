@@ -61,6 +61,12 @@
                     background-position: center;
                     width: 100%;
                 }
+                .body-listen {
+                    background-image: url("image-assets/cds.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
             }
             
             a {
@@ -210,6 +216,49 @@
             .about-para-members {
                 text-align: center;
             }
+            /* Gig list */
+            
+            .gig-list-container {
+                position: relative;
+                top: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 80vh;
+            }
+            
+            .gig-list {
+                background-color: rgba(20, 43, 60, 0.63);
+                text-align: center;
+                border-radius: 50px;
+                font-size: 8rem;
+                color: #ECFAEC;
+                padding: 0px 50px;
+            }
+            
+            .gig-list h3 {
+                font-size: 3rem;
+            }
+            
+            .gig-list-list {
+                margin-top: 50px;
+                padding: 20px;
+            }
+            
+            @media screen and (max-width: 768px) {
+                .gig-list-container {
+                    width: 100%;
+                    height: auto;
+                    justify-content: center;
+                    align-items: center;
+                    top: 50px;
+                }
+                .gig-list {
+                    margin: 20px;
+                    padding: 10px;
+                }
+            }
             /*Listen & Contact */
             
             .link-items-container {
@@ -238,7 +287,6 @@
                     top: 50px;
                 }
                 .link-items {
-                    width: 100%;
                     margin: 20px;
                 }
             }
