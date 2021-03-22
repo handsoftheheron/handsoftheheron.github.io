@@ -17,7 +17,7 @@
             }
 
             .body-home {
-                background-image: url("image-assets/livenice.jpg");
+                background-image: url("image-assets/grass.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
@@ -31,10 +31,11 @@
             }
 
             .body-listen {
-                background-image: url("image-assets/cds.jpg");
+                background-image: url("image-assets/13MoonsArtwork.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
+                background-position: left top;
             }
 
             .body-gigs {
@@ -45,13 +46,18 @@
             }
 
             .body-contact {
-                background-image: url("image-assets/backview.jpg");
+                background-image: url("image-assets/livenice.jpg");
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-attachment: fixed;
                 background-position: center;
             }
-
+            @media screen and (min-width: 768px) {
+                .body-home {
+                    min-height: 1000px;
+                    background-attachment: scroll;
+                }
+            }
             @media screen and (max-width: 768px) {
                 .body {
                     background-image: url(image-assets/mobile.jpg);
@@ -62,7 +68,7 @@
                     width: 100%;
                 }
                 .body-listen {
-                    background-image: url("image-assets/cds.jpg");
+                    background-image: url("image-assets/13MoonsArtwork.jpg");
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-attachment: fixed;
@@ -143,7 +149,7 @@
                 align-items: flex-end;
                 position: relative;
                 top: 130px;
-                height: 40vh;
+                height: 50vh;
                 width: 80%;
             }
 
@@ -155,10 +161,10 @@
             }
 
             .title {
-                font-family: 'Berkshire Swash', cursive;
+                font-family: 'Poiret One';
                 font-weight: lighter;
                 color: rgb(223, 223, 223);
-                font-size: 4rem;
+                font-size: 5rem;
             }
 
             @media screen and (max-width: 768px) {
@@ -194,6 +200,10 @@
                 border-radius: 25px;
                 padding: 25px;
                 margin-top: 80px;
+            }
+
+            .about a {
+                color: #EDBCED;
             }
 
             .about-para {
@@ -236,6 +246,7 @@
                 font-size: 8rem;
                 color: #ECFAEC;
                 padding: 0px 50px;
+                width: 500px;
             }
 
             .gig-list h3 {
